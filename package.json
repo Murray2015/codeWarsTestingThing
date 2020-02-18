@@ -1,0 +1,15 @@
+{
+  "name": "codeWarsTestingThing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sudokuSolver.js",
+  "scripts": {
+    "test": "jest yourSolution.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^25.1.0"
+  }
+}
