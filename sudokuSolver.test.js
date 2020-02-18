@@ -1,4 +1,4 @@
-const thing = require("./sudokuSolver.js");
+const checkSudoku = require("./sudokuSolver.js");
 
 const sud1 = [
   [3, 4, 1, 2, 9, 8, 7, 6, 5],
@@ -115,17 +115,33 @@ const sud10 = [
   [8, 6, 3, 9, 7, 2, 1, 4, 5]
 ];
 
-function checkSudoku(grid) {
-  return;
-}
-
-expect(checkSudoku(sud1)).toBe(true);
-expect(checkSudoku(sud2)).toBe(false);
-expect(checkSudoku(sud3)).toBe(false);
-expect(checkSudoku(sud4)).toBe(false);
-expect(checkSudoku(sud5)).toBe(true);
-expect(checkSudoku(sud6)).toBe(true);
-expect(checkSudoku(sud7)).toBe(true);
-expect(checkSudoku(sud8)).toBe(true);
-expect(checkSudoku(sud9)).toBe(true);
-expect(checkSudoku(sud10)).toBe(true);
+test("Should return true", () => {
+  expect(checkSudoku(sud1)).toBe(true);
+});
+test("Should return false", () => {
+  expect(checkSudoku(sud2)).toBe(false);
+});
+test("Should return false", () => {
+  expect(checkSudoku(sud3)).toBe(false);
+});
+test("Should return false", () => {
+  expect(checkSudoku(sud4)).toBe(false);
+});
+test("Should return true", () => {
+  expect(checkSudoku(sud5)).toBe(true);
+});
+test("Should return true", () => {
+  expect(checkSudoku(sud6)).toBe(true);
+});
+test("Should return true", () => {
+  expect(checkSudoku(sud7)).toBe(true);
+});
+test("Should return true", () => {
+  expect(checkSudoku(sud8)).toBe(true);
+});
+test("Should return true", () => {
+  expect(checkSudoku(sud9)).toBe(true);
+});
+test("Should return true", () => {
+  expect(checkSudoku(sud10)).toBe(true);
+});
